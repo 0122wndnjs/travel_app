@@ -6,6 +6,8 @@ import WidthSpacer from "./Reusable/WidthSpacer";
 import Places from "./Home/Places";
 import Country from "./Tiles/Country/Country";
 import NetworkImage from "./Reusable/NetworkImage";
+import Recommendations from "./Home/Recommendations";
+import ReusableTile from "./Reusable/ReusableTile";
 
 export {
   Slides,
@@ -16,4 +18,6 @@ export {
   Places,
   Country,
   NetworkImage,
+  Recommendations,
+  ReusableTile,
 };
