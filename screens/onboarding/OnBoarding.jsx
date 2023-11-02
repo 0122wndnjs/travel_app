@@ -1,8 +1,7 @@
 import { StyleSheet, FlatList } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Slides } from "../../components";
-
+import Slides from "../../components/Onboard/Slides"
 const OnBoarding = () => {
   const slides = [
     {

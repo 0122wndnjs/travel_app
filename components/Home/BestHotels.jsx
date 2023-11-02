@@ -11,6 +11,7 @@ import { COLORS, SIZES, TEXT } from "../../constants/theme";
 import ReusableText from "../Reusable/ReusableText";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import HotelCard from "../Tiles/Hotels/HotelCard";
 
 const BestHotels = () => {
   const navigation = useNavigation();
@@ -88,8 +89,8 @@ const BestHotels = () => {
         keyExtractor={(item) => item._id}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ columnGap: SIZES.medium }}
-        renderItem={({item}) => (
-            <Text>{item.title}</Text>
+        renderItem={({ item }) => (
+          <HotelCard item={item} margin={10} onPress={() => navigation.navigate('HotelDetails')} />
         )}
       />
     </View>
