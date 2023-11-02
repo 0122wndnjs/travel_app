@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import reusable from "../../components/Reusable/reusable.style";
-import { HeightSpacer, ReusableText } from "../../components";
+import { HeightSpacer, ReusableText, Places } from "../../components";
 import { COLORS, SIZES, TEXT } from "../../constants/theme";
 import { AntDesign } from "@expo/vector-icons";
 import styles from "./home.style";
@@ -33,7 +33,7 @@ const Home = ({ navigation }) => {
           size={TEXT.large}
           color={COLORS.black}
         />
-
+        <Places />
         
       </View>
     </SafeAreaView>
