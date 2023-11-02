@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, VisualizedList } from "react-native";
+import { StyleSheet, Text, View, VirtualizedList } from "react-native";
 import React from "react";
 import HeightSpacer from "../Reusable/HeightSpacer";
 import { SIZES } from "../../constants/theme";
@@ -56,7 +56,7 @@ const Places = () => {
     <View>
       <HeightSpacer height={20} />
 
-      <VisualizedList
+      <VirtualizedList
         data={countries}
         horizontal
         keyExtractor={(item) => item._id}
