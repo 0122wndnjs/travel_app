@@ -9,7 +9,7 @@ import styles from "./home.style";
 
 const Home = ({ navigation }) => {
   return (
-    <SafeAreaView styles={reusable.container}>
+    <SafeAreaView style={reusable.container}>
       <View>
         <View style={reusable.rowWithSpace("space-between")}>
           <ReusableText
@@ -34,7 +34,7 @@ const Home = ({ navigation }) => {
           color={COLORS.black}
         />
         <Places />
-        
+
       </View>
     </SafeAreaView>
   );
