@@ -55,7 +55,7 @@ const Places = () => {
 
   return (
     <View>
-      <HeightSpacer height={20} />
+      <HeightSpacer height={10} />
 
       <VirtualizedList
         data={countries}

@@ -70,7 +70,7 @@ const BestHotels = () => {
   return (
     <View>
       <View
-        style={[reusable.rowWithSpace("space-between"), { paddingBottom: 20 }]}
+        style={[reusable.rowWithSpace("space-between"), { paddingBottom: 5 }]}
       >
         <ReusableText
           text={"Nearby Hotels"}
@@ -90,7 +90,11 @@ const BestHotels = () => {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ columnGap: SIZES.medium }}
         renderItem={({ item }) => (
-          <HotelCard item={item} margin={10} onPress={() => navigation.navigate('HotelDetails')} />
+          <HotelCard
+            item={item}
+            margin={10}
+            onPress={() => navigation.navigate("HotelDetails")}
+          />
         )}
       />
     </View>
