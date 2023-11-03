@@ -12,7 +12,7 @@ import reusable from "../../components/Reusable/reusable.style";
 import styles from "./search.style";
 import { Feather } from "@expo/vector-icons";
 import { COLORS } from "../../constants/theme";
-import { HeightSpacer } from "../../components";
+import { AppBar, HeightSpacer } from "../../components";
 import ReusableTile from "../../components/Reusable/ReusableTile";
 
 const Search = ({ navigation }) => {
@@ -73,6 +73,19 @@ const Search = ({ navigation }) => {
 
   return (
     <SafeAreaView style={reusable.container}>
+      <View style={{ height: 50 }}>
+        <AppBar
+          top={20}
+          left={20}
+          right={20}
+          title={"Search"}
+          color={COLORS.white}
+          icon={"filter"}
+          color1={COLORS.white}
+          onPress={() => navigation.goBack()}
+          onPress1={() => {}}
+        />
+      </View>
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
           <TextInput
