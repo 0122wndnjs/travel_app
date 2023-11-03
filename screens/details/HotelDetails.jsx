@@ -49,7 +49,7 @@ const HotelDetails = ({ navigation }) => {
           _id: "64c5d95adc7efae2a45ec376",
           username: "John Doe",
           profile:
-            "https://d326fntlu7tb1e.cloudfront.net/uploads/4c004766-c0ad-42ed-bef1=6a7616b24c11-vinci_11.jpg",
+            "https://d326fntlu7tb1e.cloudfront.net/uploads/4c004766-c0ad-42ed-bef1-6a7616b24c11-vinci_11.jpg",
         },
         updatedAt: "2023-08-09",
       },
@@ -62,7 +62,7 @@ const HotelDetails = ({ navigation }) => {
           _id: "64c5d95adc7efae2a45ec376",
           username: "Zoe Doe",
           profile:
-            "https://d326fntlu7tb1e.cloudfront.net/uploads/4c004766-c0ad-42ed-bef1=6a7616b24c11-vinci_11.jpg",
+            "https://d326fntlu7tb1e.cloudfront.net/uploads/4c004766-c0ad-42ed-bef1-6a7616b24c11-vinci_11.jpg",
         },
         updatedAt: "2023-08-09",
       },
