@@ -15,7 +15,7 @@ import { COLORS } from "../../constants/theme";
 import { HeightSpacer } from "../../components";
 import ReusableTile from "../../components/Reusable/ReusableTile";
 
-const Search = () => {
+const Search = ({ navigation }) => {
   const [searchKey, setSearchKey] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const search = [
@@ -102,7 +102,10 @@ const Search = () => {
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <View style={styles.tile}>
-              <ReusableTile item={item} />
+              <ReusableTile
+                item={item}
+                onPress={() => navigation.navigate("PlaceDetails", item._id)}
+              />
             </View>
           )}
         />
