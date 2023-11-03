@@ -5,7 +5,7 @@ import AppBar from "../../components/Reusable/AppBar";
 import { COLORS } from "../../constants/theme";
 import ReusableTile from "../../components/Reusable/ReusableTile";
 
-const Recommended = ({navigation}) => {
+const Recommended = ({ navigation }) => {
   const recommendations = [
     {
       _id: "64c631650298a05640539adc",
@@ -62,12 +62,15 @@ const Recommended = ({navigation}) => {
     <SafeAreaView style={{ marginHorizontal: 20 }}>
       <View style={{ height: 50 }}>
         <AppBar
+          top={10}
+          left={0}
+          right={0}
           title={"Recommendations"}
           color={COLORS.white}
           icon={"search1"}
           color1={COLORS.white}
           onPress={() => navigation.goBack()}
-          onPress1={() => navigation.navigate('Search')}
+          onPress1={() => navigation.navigate("Search")}
         />
       </View>
 
@@ -77,7 +80,10 @@ const Recommended = ({navigation}) => {
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <View style={{ marginBottom: 10 }}>
-              <ReusableTile item={item} onPress={() => navigation.navigate('PlaceDetails', item._id)} />
+              <ReusableTile
+                item={item}
+                onPress={() => navigation.navigate("PlaceDetails", item._id)}
+              />
             </View>
           )}
         />

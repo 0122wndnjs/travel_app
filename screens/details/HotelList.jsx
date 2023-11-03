@@ -5,7 +5,7 @@ import AppBar from "../../components/Reusable/AppBar";
 import { COLORS } from "../../constants/theme";
 import ReusableTile from "../../components/Reusable/ReusableTile";
 
-const HotelList = ({navigation}) => {
+const HotelList = ({ navigation }) => {
   const hotels = [
     {
       _id: "64c674d23cfa5e847bcd5430",
@@ -62,12 +62,15 @@ const HotelList = ({navigation}) => {
     <SafeAreaView style={{ marginHorizontal: 20 }}>
       <View style={{ height: 50 }}>
         <AppBar
+          top={10}
+          left={0}
+          right={0}
           title={"Nearby Hotels"}
           color={COLORS.white}
           icon={"search1"}
           color1={COLORS.white}
           onPress={() => navigation.goBack()}
-          onPress1={() => navigation.navigate('HotelSearch')}
+          onPress1={() => navigation.navigate("HotelSearch")}
         />
       </View>
 
@@ -77,7 +80,10 @@ const HotelList = ({navigation}) => {
           keyExtractor={(item) => item._id}
           renderItem={({ item }) => (
             <View style={{ marginBottom: 10 }}>
-              <ReusableTile item={item} onPress={() => navigation.navigate('PlaceDetails', item._id)} />
+              <ReusableTile
+                item={item}
+                onPress={() => navigation.navigate("HotelDetails", item._id)}
+              />
             </View>
           )}
         />
