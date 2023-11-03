@@ -9,6 +9,8 @@ import AppBar from "./Reusable/AppBar";
 import DescriptionText from "./Reusable/DescriptionText";
 import PopularList from "./Country/PopularList";
 import HotelMap from "./Hotel/HotelMap";
+import ReviewTile from "./Tiles/Reviews/ReviewTile";
+import ReviewsList from "./Hotel/ReviewsList";
 
 export {
   ReusableText,
@@ -22,4 +24,6 @@ export {
   DescriptionText,
   PopularList,
   HotelMap,
+  ReviewTile,
+  ReviewsList,
 };
