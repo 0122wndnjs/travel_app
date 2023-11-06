@@ -1,10 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { AssetImage, HeightSpacer, ReusableBtn, ReusableText } from "../../components";
+import {
+  AssetImage,
+  HeightSpacer,
+  ReusableBtn,
+  ReusableText,
+} from "../../components";
 import { COLORS, SIZES, TEXT } from "../../constants/theme";
 import ReusableTile from "../../components/Reusable/ReusableTile";
 
-const Successful = () => {
+const Successful = ({ navigation }) => {
   const hotel = {
     _id: "64c67442776ed29f19727fd7",
     country_id: "64c62bfc65af9f8c969a8d04",

@@ -18,6 +18,8 @@ import Payments from "./profile/Payments";
 import Settings from "./settings/Settings";
 import Failed from "./bookings/Failed";
 import Successful from "./bookings/Successful";
+import Registration from "./authentication/Registration";
+import Signin from "./authentication/Signin";
 
 export {
   OnBoarding,
@@ -40,4 +42,6 @@ export {
   Settings,
   Failed,
   Successful,
+  Registration,
+  Signin,
 };
