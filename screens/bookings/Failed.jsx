@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import {
-  AssetImage,
   HeightSpacer,
   ReusableBtn,
   ReusableText,
@@ -24,12 +23,12 @@ const Failed = ({ navigation }) => {
   return (
     <View>
       <View style={{ marginTop: "40%" }}>
-        <AssetImage
+        {/* <AssetImage
           data={require("../../assets/images/Failed.png")}
           width={"100%"}
           height={200}
           mode={"contain"}
-        />
+        /> */}
 
         <HeightSpacer height={40} />
 
