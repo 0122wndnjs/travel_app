@@ -1,7 +1,7 @@
 import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import { Signin } from "../screens";
+import { Signin, Registration } from "../screens";
 import { COLORS } from "../constants/theme";
 import { HeightSpacer } from "../components";
 
@@ -20,7 +20,7 @@ const AuthTopTab = () => {
           mode={"contain"}
         /> */}
 
-        <View style={{height: 600}}>
+        <View style={{ height: 600 }}>
           <Tab.Navigator>
             <Tab.Screen name="Signin" component={Signin} />
             <Tab.Screen name="Registration" component={Registration} />

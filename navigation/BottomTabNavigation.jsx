@@ -5,6 +5,7 @@ import { Home, Profile, Chat, Location } from "../screens";
 import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from "../constants/theme";
 import TopTab from "./TopTab";
+import AuthTopTab from "./AuthTopTab";
 
 const Tab = createBottomTabNavigator();
 
@@ -62,7 +63,7 @@ const BottomTabNavigation = () => {
       />
       <Tab.Screen
         name="Chat"
-        component={Chat}
+        component={AuthTopTab}
         options={{
           tabBarStyle: tabBarStyle,
           tabBarShowLabel: false,
