@@ -140,7 +140,7 @@ const SelectedRoom = ({ navigation }) => {
             <HeightSpacer height={30} />
 
             <ReusableBtn
-              onPress={() => navigation.navigate("SelectedRoom", { item })}
+              onPress={() => navigation.navigate("Success")}
               btnText={"Book Now"}
               width={SIZES.width - 50}
               backgroundColor={COLORS.green}
