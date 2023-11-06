@@ -16,6 +16,8 @@ import TopInfo from "./top/TopInfo";
 import TopTrips from "./top/TopTrips";
 import Payments from "./profile/Payments";
 import Settings from "./settings/Settings";
+import Failed from "./bookings/Failed";
+import Successful from "./bookings/Successful";
 
 export {
   OnBoarding,
@@ -36,4 +38,6 @@ export {
   TopTrips,
   Payments,
   Settings,
+  Failed,
+  Successful,
 };
