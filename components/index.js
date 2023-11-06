@@ -12,6 +12,7 @@ import HotelMap from "./Hotel/HotelMap";
 import ReviewTile from "./Tiles/Reviews/ReviewTile";
 import ReviewsList from "./Hotel/ReviewsList";
 import ProfileTile from "./Reusable/ProfileTile";
+import SettingsTile from "./Settings/SettingsTile";
 
 export {
   ReusableText,
@@ -28,4 +29,5 @@ export {
   ReviewTile,
   ReviewsList,
   ProfileTile,
+  SettingsTile,
 };
