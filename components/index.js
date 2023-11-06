@@ -13,6 +13,7 @@ import ReviewTile from "./Tiles/Reviews/ReviewTile";
 import ReviewsList from "./Hotel/ReviewsList";
 import ProfileTile from "./Reusable/ProfileTile";
 import SettingsTile from "./Settings/SettingsTile";
+import Counter from "./Reusable/Counter";
 
 export {
   ReusableText,
@@ -30,4 +31,5 @@ export {
   ReviewsList,
   ProfileTile,
   SettingsTile,
+  Counter,
 };
