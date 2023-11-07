@@ -80,4 +80,26 @@ module.exports = {
       return next(error);
     }
   },
+
+  search: async (req, res, next) => {
+    try {
+      const results = await Place.aggregate([
+        {
+          $search: {
+            index: "places",
+            text: {
+              query: req.params.key,
+              path: {
+                wildcard: "*",
+              },
+            },
+          },
+        },
+      ]);
+
+      res.status(200).json(results);
+    } catch (error) {
+      return next(error);
+    }
+  },
 };
