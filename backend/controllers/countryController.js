@@ -21,7 +21,31 @@ module.exports = {
     }
   },
 
-  //   addPlacesToCountry: async (req, res, next) => {},
+  addPlacesToCountry: async (req, res, next) => {
+    const { countryId, placeId } = req.body;
+
+    try {
+      const country = await Country.findById(countryId);
+
+      if (!country) {
+        return res.status(404).json({ message: "Country not found!" });
+      }
+
+      const index = country.popular.indexOf(placeId);
+
+      if (index !== -1) {
+        country.popular.splice(index, 1);
+      } else {
+        country.popular.push(placeId);
+      }
+
+      await country.save();
+
+      res.status(200).json({ status: true });
+    } catch (error) {
+      return next(error);
+    }
+  },
 
   getCountries: async (req, res, next) => {
     try {
