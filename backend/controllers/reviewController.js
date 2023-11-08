@@ -1,4 +1,5 @@
 const Review = require("../models/Review");
+const Hotel = require("../models/Hotel");
 
 module.exports = {
   addReview: async (req, res, next) => {
@@ -21,6 +22,11 @@ module.exports = {
         });
 
         await newReview.save();
+
+        const hotel = await Hotel.findById(place);
+        hotel.reviews.push(newReview._id);
+
+        await hotel.save();
       }
 
       res.status(200).json({ status: true });
