@@ -61,7 +61,15 @@ module.exports = {
     const hotelId = req.params.id;
 
     try {
-      const hotel = await Hotel.findById(hotelId);
+      const hotel = await Hotel.findById(hotelId).populate({
+        path: "reviews",
+        select: "rating review updatedAt user",
+        populate: {
+          path: "user",
+          model: "User",
+          select: "username profile",
+        },
+      });
 
       if (!hotel) {
         return res

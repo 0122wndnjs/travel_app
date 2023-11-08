@@ -19,6 +19,12 @@ const HotelSchema = new mongoose.Schema(
       longitude: { type: Number, required: true },
     },
     price: { type: Number, required: true },
+    reviews: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Review",
+      },
+    ],
     facilities: [
       {
         wifi: { type: Boolean, default: true },
